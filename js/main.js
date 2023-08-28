@@ -54,4 +54,16 @@
     
     
 
+    const sendOtpButton = document.getElementById("sendOtpButton");
+const otpContainer = document.getElementById("otpContainer");
+
+sendOtpButton.addEventListener("click", () => {
+    const mobileInput = document.getElementById("mobile");
+
+    if (mobileInput.value) {
+        otpContainer.style.display = "block";
+        sendOtpButton.textContent = "Submit OTP";
+    }
+});
+
 })(jQuery);
